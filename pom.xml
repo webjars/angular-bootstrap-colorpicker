@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-bootstrap-colorpicker</artifactId>
-    <version>3.0.8-SNAPSHOT</version>
+    <version>3.0.8</version>
     <name>angular-bootstrap-colorpicker</name>
     <description>WebJar for angular-bootstrap-colorpicker</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/angular-bootstrap-colorpicker</url>
         <connection>scm:git:https://github.com/webjars/angular-bootstrap-colorpicker.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/angular-bootstrap-colorpicker.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>angular-bootstrap-colorpicker-3.0.8</tag>
     </scm>
     
     <dependencies>
@@ -82,7 +82,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/angular-bootstrap-colorpicker-${upstream.version}" includes="css/ img/ js/ less/"/>
+                                    <fileset dir="${project.build.directory}/angular-bootstrap-colorpicker-${upstream.version}" includes="css/ img/ js/ less/" />
                                 </move>
                             </target>
                         </configuration>
